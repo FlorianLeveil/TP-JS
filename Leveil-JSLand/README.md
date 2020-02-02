@@ -1,6 +1,6 @@
 # TP JS LAND !
 
-1. Clonner le repo.
+1. Cloner le repo.
 2. Installer Node.
 3. Installer "prompts":
 * Si vous avez initialisé un projet node: `npm install --save prompts`
