@@ -1,0 +1,134 @@
+extends ../layout2
+
+block content
+    h1.pt-5.pb-3= items[0].nom
+        .row.justify-content-between.pt-5
+            .col-lg-5.bg-black
+                .row.bg-black
+                    .col-lg-12
+                        h2.text-white.pt-3 Equipements
+                        hr.bg-white
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Coiffe: " + items[1].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="coiffes/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Amulette: " + items[2].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="amulettes/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Anneau: " + items[3].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="anneaus/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Botte: " + items[4].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="bottes/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Bouclier: " + items[5].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="boucliers/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Cac: " + items[6].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="cacs/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Cape: " + items[7].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="capes/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Ceinture: " + items[8].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="ceintures/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Dofus: " + items[9].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="dofus/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Monture: " + items[10].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="montures/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Familier: " + items[11].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="familiers/"+items[0].id) Modifier
+                        .row.align-items-center.pb-2
+                            .col-lg-8
+                                p.text-white.mb-0= "Trophée: " + items[12].name
+                            .col-lg-4
+                                a.btn.btn-primary(href="trophees/"+items[0].id) Modifier
+            .col-lg-6
+                .row.bg-black
+                    .col-lg-12
+                        h2.text-white.pt-3 Caractéristiques
+                        hr.bg-white
+                    .col-lg-3
+                        p.text-white= "Pv: " + ((55 + 5 * items[0].lvl) + items[1].pv + items[2].pv + items[3].pv + items[4].pv + items[5].pv + items[6].pv + items[7].pv + items[8].pv + items[9].pv + items[10].pv + items[11].pv + items[12].pv)
+                        p.text-white= "Pa: " + (7 + items[1].pa + items[2].pa + items[3].pa + items[4].pa + items[5].pa + items[6].pa + items[7].pa + items[8].pa + items[9].pa + items[10].pa + items[11].pa + items[12].pa)
+                        p.text-white= "Po: " + (items[1].po + items[2].po + items[3].po + items[4].po + items[5].po + items[6].po + items[7].po + items[8].po + items[9].po + items[10].po + items[11].po + items[12].po)
+                        p.text-white= "Pm: " + (3 + items[1].pm + items[2].pm + items[3].pm + items[4].pm + items[5].pm + items[6].pm + items[7].pm + items[8].pm + items[9].pm + items[10].pm + items[11].pm + items[12].pm)
+                        p.text-white= "Invocation: " + (1 + items[1].invo + items[2].invo + items[3].invo + items[4].invo + items[5].invo + items[6].invo + items[7].invo + items[8].invo + items[9].invo + items[10].invo + items[11].invo + items[12].invo)
+                        p.text-white= "Initiative: " + (add_ini + items[1].ini + items[2].ini + items[3].ini + items[4].ini + items[5].ini + items[6].ini + items[7].ini + items[8].ini + items[9].ini + items[10].ini + items[11].ini + items[12].ini)
+                        p.text-white= "Critique %: " + (items[1].critique+ items[2].critique+ items[3].critique+ items[4].critique+ items[5].critique+ items[6].critique+ items[7].critique+ items[8].critique+ items[9].critique+ items[10].critique+ items[11].critique+ items[12].pa)
+                        p.text-white= "Soin: " + (add_soins + items[1].soin + items[2].soin + items[3].soin + items[4].soin + items[5].soin + items[6].soin + items[7].soin + items[8].soin + items[9].soin + items[10].soin + items[11].soin + items[12].soin)
+                        p.text-white= "Prospection: " + (100 + add_prosp + items[1].prosp + items[2].prosp + items[3].prosp + items[4].prosp + items[5].prosp + items[6].prosp + items[7].prosp + items[8].prosp + items[9].prosp + items[10].prosp + items[11].prosp + items[12].prosp)
+                        p.text-white= "Sagesse: " + (items[1].sag + items[2].sag + items[3].sag + items[4].sag + items[5].sag + items[6].sag + items[7].sag + items[8].sag + items[9].sag + items[10].sag + items[11].sag + items[12].sag)
+                        p.text-white= "Intelligence: " + (items[1].int + items[2].int + items[3].int + items[4].int + items[5].int + items[6].int + items[7].int + items[8].int + items[9].int + items[10].int + items[11].int + items[12].int)
+                        p.text-white= "Force: " + (items[1].fo + items[2].fo + items[3].fo + items[4].fo + items[5].fo + items[6].fo + items[7].fo + items[8].fo + items[9].fo + items[10].fo + items[11].fo + items[12].fo)
+                        p.text-white= "Agilité: " + (items[1].agi + items[2].agi + items[3].agi + items[4].agi + items[5].agi + items[6].agi + items[7].agi + items[8].agi + items[9].agi + items[10].agi + items[11].agi + items[12].agi)
+                        p.text-white= "Chance: " + (items[1].cha + items[2].cha + items[3].cha + items[4].cha + items[5].cha + items[6].cha + items[7].cha + items[8].cha + items[9].cha + items[10].cha + items[11].cha + items[12].cha)
+                        p.text-white= "Puissance: " + (items[1].pui + items[2].pui + items[3].pui + items[4].pui + items[5].pui + items[6].pui + items[7].pui + items[8].pui + items[9].pui + items[10].pui + items[11].pui + items[12].pui)
+
+                    .col-lg-3
+                        p.text-white= "Fuite: " + (add_fui +items[1].fui + items[2].fui + items[3].fui + items[4].fui + items[5].fui + items[6].fui + items[7].fui + items[8].fui + items[9].fui + items[10].fui + items[11].fui + items[12].fui)
+                        p.text-white= "Tacle: " + (add_tac + items[1].tac + items[2].tac + items[3].tac + items[4].tac + items[5].tac + items[6].tac + items[7].tac + items[8].tac + items[9].tac + items[10].tac + items[11].tac + items[12].tac)
+                        p.text-white= "Esquive Pa: " + (add_esq_pa + items[1].esq_pa + items[2].esq_pa + items[3].esq_pa + items[4].esq_pa + items[5].esq_pa + items[6].esq_pa + items[7].esq_pa + items[8].esq_pa + items[9].esq_pa + items[10].esq_pa + items[11].esq_pa + items[12].esq_pa)
+                        p.text-white= "Esquive Pm: " + (add_esq_pm + items[1].esq_pm + items[2].esq_pm + items[3].esq_pm + items[4].esq_pm + items[5].esq_pm + items[6].esq_pm + items[7].esq_pm + items[8].esq_pm + items[9].esq_pm + items[10].esq_pm + items[11].esq_pm + items[12].esq_pm)
+                        p.text-white= "Retrait Pa: " + (add_ret_pa + items[1].ret_pa + items[2].ret_pa + items[3].ret_pa + items[4].ret_pa + items[5].ret_pa + items[6].ret_pa + items[7].ret_pa + items[8].ret_pa + items[9].ret_pa + items[10].ret_pa + items[11].ret_pa + items[12].ret_pa)
+                        p.text-white= "Retrait Pm: " + (add_ret_pm + items[1].ret_pm + items[2].ret_pm + items[3].ret_pm + items[4].ret_pm + items[5].ret_pm + items[6].ret_pm + items[7].ret_pm + items[8].ret_pm + items[9].ret_pm + items[10].ret_pm + items[11].ret_pm + items[12].ret_pm)
+                        p.text-white= "Pods: " + (add_pod + items[1].pod + items[2].pod + items[3].pod + items[4].pod + items[5].pod + items[6].pod + items[7].pod + items[8].pod + items[9].pod + items[10].pod + items[11].pod + items[12].pod)
+                        p.text-white= "Dmg piège: " + (items[1].dmg_piege + items[2].dmg_piege + items[3].dmg_piege + items[4].dmg_piege + items[5].dmg_piege + items[6].dmg_piege + items[7].dmg_piege + items[8].dmg_piege + items[9].dmg_piege + items[10].dmg_piege + items[11].dmg_piege + items[12].dmg_piege)
+                        p.text-white= "Bouclier: " + (items[1].bou + items[2].bou + items[3].bou + items[4].bou + items[5].bou + items[6].bou + items[7].bou + items[8].bou + items[9].bou + items[10].bou + items[11].bou + items[12].bou)
+                        p.text-white= "Pui piège: " + (items[1].pui_piege + items[2].pui_piege + items[3].pui_piege + items[4].pui_piege + items[5].pui_piege + items[6].pui_piege + items[7].pui_piege + items[8].pui_piege + items[9].pui_piege + items[10].pui_piege + items[11].pui_piege + items[12].pui_piege)
+                        p.text-white= "Renvoi Dmg: " + (items[1].renvoie_dmg + items[2].renvoie_dmg + items[3].renvoie_dmg + items[4].renvoie_dmg + items[5].renvoie_dmg + items[6].renvoie_dmg + items[7].renvoie_dmg + items[8].renvoie_dmg + items[9].renvoie_dmg + items[10].renvoie_dmg + items[11].renvoie_dmg + items[12].renvoie_dmg)
+                        p.text-white= "Rés Pou: " + (items[1].re_pousse + items[2].re_pousse + items[3].re_pousse + items[4].re_pousse + items[5].re_pousse + items[6].re_pousse + items[7].re_pousse + items[8].re_pousse + items[9].re_pousse + items[10].re_pousse + items[11].re_pousse + items[12].re_pousse)
+                        p.text-white= "Rés Crit: " + (items[1].re_crit + items[2].re_crit + items[3].re_crit + items[4].re_crit + items[5].re_crit + items[6].re_crit + items[7].re_crit + items[8].re_crit + items[9].re_crit + items[10].re_crit + items[11].re_crit + items[12].re_crit)
+                        p.text-white= "Dmg Pou : " + (items[1].dmg_pousee + items[2].dmg_pousee + items[3].dmg_pousee + items[4].dmg_pousee + items[5].dmg_pousee + items[6].dmg_pousee + items[7].dmg_pousee + items[8].dmg_pousee + items[9].dmg_pousee + items[10].dmg_pousee + items[11].dmg_pousee + items[12].dmg_pousee)
+                        p.text-white= "Dmg Crit: " + (items[1].dmg_crit + items[2].dmg_crit + items[3].dmg_crit + items[4].dmg_crit + items[5].dmg_crit + items[6].dmg_crit + items[7].dmg_crit + items[8].dmg_crit + items[9].dmg_crit + items[10].dmg_crit + items[11].dmg_crit + items[12].dmg_crit)
+
+                    .col-lg-3
+                        p.text-white= "Rés Fix Neutre: " + (items[1].re_f_neutre + items[2].re_f_neutre + items[3].re_f_neutre + items[4].re_f_neutre + items[5].re_f_neutre + items[6].re_f_neutre + items[7].re_f_neutre + items[8].re_f_neutre + items[9].re_f_neutre + items[10].re_f_neutre + items[11].re_f_neutre + items[12].re_f_neutre)
+                        p.text-white= "Rés Fix Feu: " + (items[1].re_f_feu + items[2].re_f_feu + items[3].re_f_feu + items[4].re_f_feu + items[5].re_f_feu + items[6].re_f_feu + items[7].re_f_feu + items[8].re_f_feu + items[9].re_f_feu + items[10].re_f_feu + items[11].re_f_feu + items[12].re_f_feu)
+                        p.text-white= "Rés Fix Eau: " + (items[1].re_f_eau + items[2].re_f_eau + items[3].re_f_eau + items[4].re_f_eau + items[5].re_f_eau + items[6].re_f_eau + items[7].re_f_eau + items[8].re_f_eau + items[9].re_f_eau + items[10].re_f_eau + items[11].re_f_eau + items[12].re_f_eau)
+                        p.text-white= "Rés Fix Air: " + (items[1].re_f_air + items[2].re_f_air + items[3].re_f_air + items[4].re_f_air + items[5].re_f_air + items[6].re_f_air + items[7].re_f_air + items[8].re_f_air + items[9].re_f_air + items[10].re_f_air + items[11].re_f_air + items[12].re_f_air)
+                        p.text-white= "Rés Fix Terre: " + (items[1].re_f_terre + items[2].re_f_terre + items[3].re_f_terre + items[4].re_f_terre + items[5].re_f_terre + items[6].re_f_terre + items[7].re_f_terre + items[8].re_f_terre + items[9].re_f_terre + items[10].re_f_terre + items[11].re_f_terre + items[12].re_f_terre)
+                        p.text-white= "Rés % Neutre: " + (items[1].re_x_neutre + items[2].re_x_neutre + items[3].re_x_neutre + items[4].re_x_neutre + items[5].re_x_neutre + items[6].re_x_neutre + items[7].re_x_neutre + items[8].re_x_neutre + items[9].re_x_neutre + items[10].re_x_neutre + items[11].re_x_neutre + items[12].re_x_neutre)
+                        p.text-white= "Rés % Feu: " + (items[1].re_x_feu + items[2].re_x_feu + items[3].re_x_feu + items[4].re_x_feu + items[5].re_x_feu + items[6].re_x_feu + items[7].re_x_feu + items[8].re_x_feu + items[9].re_x_feu + items[10].re_x_feu + items[11].re_x_feu + items[12].re_x_feu)
+                        p.text-white= "Rés % Eau: " + (items[1].re_x_chance + items[2].re_x_chance + items[3].re_x_chance + items[4].re_x_chance + items[5].re_x_chance + items[6].re_x_chance + items[7].re_x_chance + items[8].re_x_chance + items[9].re_x_chance + items[10].re_x_chance + items[11].re_x_chance + items[12].re_x_chance)
+                        p.text-white= "Rés % Air: " + (items[1].re_x_air + items[2].re_x_air + items[3].re_x_air + items[4].re_x_air + items[5].re_x_air + items[6].re_x_air + items[7].re_x_air + items[8].re_x_air + items[9].re_x_air + items[10].re_x_air + items[11].re_x_air + items[12].re_x_air)
+                        p.text-white= "Rés % Terre: " + (items[1].re_x_terre+ items[2].re_x_terre+ items[3].re_x_terre+ items[4].re_x_terre+ items[5].re_x_terre+ items[6].re_x_terre+ items[7].re_x_terre+ items[8].re_x_terre+ items[9].re_x_terre+ items[10].re_x_terre+ items[11].re_x_terre+ items[12].re_f_neutre)
+                        p.text-white= "Rés % Mélée: " + (items[1].re_x_mele+ items[2].re_x_mele + items[3].re_x_mele + items[4].re_x_mele + items[5].re_x_mele + items[6].re_x_mele + items[7].re_x_mele + items[8].re_x_mele + items[9].re_x_mele + items[10].re_x_mele + items[11].re_x_mele + items[12].re_x_mele)
+                        p.text-white= "Rés % Distance: " + (items[1].re_x_distance + items[2].re_x_distance + items[3].re_x_distance + items[4].re_x_distance + items[5].re_x_distance + items[6].re_x_distance + items[7].re_x_distance + items[8].re_x_distance + items[9].re_x_distance + items[10].re_x_distance + items[11].re_x_distance + items[12].re_x_distance)
+                        p.text-white= "Rés % Sorts: " + (items[1].re_x_sorts + items[2].re_x_sorts + items[3].re_x_sorts + items[4].re_x_sorts + items[5].re_x_sorts + items[6].re_x_sorts + items[7].re_x_sorts + items[8].re_x_sorts + items[9].re_x_sorts + items[10].re_x_sorts + items[11].re_x_sorts + items[12].re_x_sorts)
+
+                    .col-lg-3
+                        p.text-white= "Dmg Fix Neutre: " + (items[1].dmg_f_neutre + items[2].dmg_f_neutre + items[3].dmg_f_neutre + items[4].dmg_f_neutre + items[5].dmg_f_neutre + items[6].dmg_f_neutre + items[7].dmg_f_neutre + items[8].dmg_f_neutre + items[9].dmg_f_neutre + items[10].dmg_f_neutre + items[11].dmg_f_neutre + items[12].dmg_f_neutre)
+                        p.text-white= "Dmg Fix Feu: " + (items[1].dmg_f_feu + items[2].dmg_f_feu + items[3].dmg_f_feu + items[4].dmg_f_feu + items[5].dmg_f_feu + items[6].dmg_f_feu + items[7].dmg_f_feu + items[8].dmg_f_feu + items[9].dmg_f_feu + items[10].dmg_f_feu + items[11].dmg_f_feu + items[12].dmg_f_feu)
+                        p.text-white= "Dmg Fix Eau: " + (items[1].dmg_f_chance + items[2].dmg_f_chance + items[3].dmg_f_chance + items[4].dmg_f_chance + items[5].dmg_f_chance + items[6].dmg_f_chance + items[7].dmg_f_chance + items[8].dmg_f_chance + items[9].dmg_f_chance + items[10].dmg_f_chance + items[11].dmg_f_chance + items[12].dmg_f_chance)
+                        p.text-white= "Dmg Fix Air: " + (items[1].dmg_f_air + items[2].dmg_f_air + items[3].dmg_f_air + items[4].dmg_f_air + items[5].dmg_f_air + items[6].dmg_f_air + items[7].dmg_f_air + items[8].dmg_f_air + items[9].dmg_f_air + items[10].dmg_f_air + items[11].dmg_f_air + items[12].dmg_f_air)
+                        p.text-white= "Dmg Fix Terre: " + (items[1].dmg_f_terre + items[2].dmg_f_terre + items[3].dmg_f_terre + items[4].dmg_f_terre + items[5].dmg_f_terre + items[6].dmg_f_terre + items[7].dmg_f_terre + items[8].dmg_f_terre + items[9].dmg_f_terre + items[10].dmg_f_terre + items[11].dmg_f_terre + items[12].dmg_f_terre)
+                        p.text-white= "Dmg % Mélée: " + (items[1].dmg_x_mele+ items[2].dmg_x_mele + items[3].dmg_x_mele + items[4].dmg_x_mele + items[5].dmg_x_mele + items[6].dmg_x_mele + items[7].dmg_x_mele + items[8].dmg_x_mele + items[9].dmg_x_mele + items[10].dmg_x_mele + items[11].dmg_x_mele + items[12].dmg_x_mele)
+                        p.text-white= "Dmg % Distance: " + (items[1].dmg_x_distance + items[2].dmg_x_distance + items[3].dmg_x_distance + items[4].dmg_x_distance + items[5].dmg_x_distance + items[6].dmg_x_distance + items[7].dmg_x_distance + items[8].dmg_x_distance + items[9].dmg_x_distance + items[10].dmg_x_distance + items[11].dmg_x_distance + items[12].dmg_x_distance)
+                        p.text-white= "Dmg % Cacs: " + (items[1].dmg_x_arme + items[2].dmg_x_arme + items[3].dmg_x_arme + items[4].dmg_x_arme + items[5].dmg_x_arme + items[6].dmg_x_arme + items[7].dmg_x_arme + items[8].dmg_x_arme + items[9].dmg_x_arme + items[10].dmg_x_arme + items[11].dmg_x_arme + items[12].dmg_x_arme)
+                        p.text-white= "Dmg % Sorts: " + (items[1].dmg_x_sorts + items[2].dmg_x_sorts + items[3].dmg_x_sorts + items[4].dmg_x_sorts + items[5].dmg_x_sorts + items[6].dmg_x_sorts + items[7].dmg_x_sorts + items[8].dmg_x_sorts + items[9].dmg_x_sorts + items[10].dmg_x_sorts + items[11].dmg_x_sorts + items[12].dmg_x_sorts)

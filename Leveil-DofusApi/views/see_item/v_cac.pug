@@ -1,0 +1,124 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 CACS
+    div.row
+      each cac, index in cacs
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+cac.img)
+            div.card-body
+              if cac.name
+                h5.card-title= cac.name
+              if cac.type_cac
+                p.card-text.mb-0= "Type: " + cac.type_cac
+              if cac.lvl
+                p.card-text.mb-0= "Lvl: " + cac.lvl
+              if cac.pv
+                p.card-text.mb-0= "Pv: " + cac.pv
+              if cac.pa
+                p.card-text.mb-0= "Pa: " + cac.pa
+              if cac.pm
+                p.card-text.mb-0= "Pm: " + cac.pm
+              if cac.po
+                p.card-text.mb-0= "Po: " + cac.po
+              if cac.ini
+                p.card-text.mb-0= "Initiative: " + cac.ini
+              if cac.invo
+                p.card-text.mb-0= "Invocation: " + cac.invo
+              if cac.critique
+                p.card-text.mb-0= "Critique: " + cac.critique
+              if cac.prosp
+                p.card-text.mb-0= "Prospection: " + cac.prosp
+              if cac.soin
+                p.card-text.mb-0= "Soin: " + cac.soin
+              if cac.sag
+                p.card-text.mb-0= "Sagesses: " + cac.sag
+              if cac.fo
+                p.card-text.mb-0= "Force: " + cac.fo
+              if cac.int
+                p.card-text.mb-0= "Intelligence: " + cac.int
+              if cac.cha
+                p.card-text.mb-0= "Chance: " + cac.cha
+              if cac.agi
+                p.card-text.mb-0= "Agilité: " + cac.agi
+              if cac.pui
+                p.card-text.mb-0= "Puissance: " + cac.pui
+              if cac.fui
+                p.card-text.mb-0= "Fuite: " + cac.fui
+              if cac.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + cac.esq_pa
+              if cac.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + cac.esq_pm
+              if cac.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + cac.ret_pa
+              if cac.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + cac.ret_pm
+              if cac.pod
+                p.card-text.mb-0= "Pods: " + cac.pod
+              if cac.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + cac.dmg_piege
+              if cac.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + cac.pui_piege
+              if cac.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + cac.renvoie_dmg
+              if cac.bou
+                p.card-text.mb-0= "Bouclier: " + cac.bou
+              if cac.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + cac.dmg_f_neutre
+              if cac.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + cac.dmg_f_terre
+              if cac.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + cac.dmg_f_feu
+              if cac.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + cac.dmg_f_chance
+              if cac.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + cac.dmg_f_air
+              if cac.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + cac.re_f_neutre
+              if cac.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + cac.re_f_terre
+              if cac.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + cac.re_f_feu
+              if cac.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + cac.re_f_chance
+              if cac.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + cac.re_f_air
+              if cac.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + cac.re_x_neutre
+              if cac.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + cac.re_x_terre
+              if cac.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + cac.re_x_feu
+              if cac.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + cac.re_x_chance
+              if cac.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + cac.re_x_mele
+              if cac.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + cac.re_x_distance
+              if cac.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + cac.re_x_arme
+              if cac.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + cac.re_x_sorts
+              if cac.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + cac.dmg_x_mele
+              if cac.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + cac.dmg_x_distance
+              if cac.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + cac.dmg_x_arme
+              if cac.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + cac.dmg_x_sorts
+              if cac.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + cac.dmg_crit
+              if cac.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + cac.dmg_pousse
+              if cac.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + cac.re_crit
+              if cac.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + cac.re_pousse
+            if session 
+              form(action="add/"+cac.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')

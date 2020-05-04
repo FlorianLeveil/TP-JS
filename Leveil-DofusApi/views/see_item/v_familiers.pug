@@ -1,0 +1,122 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 FAMILIERS
+    div.row
+      each familier, index in familiers
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+familier.img)
+            div.card-body
+              if familier.name
+                h5.card-title= familier.name
+              if familier.lvl
+                p.card-text.mb-0= "Lvl: " + familier.lvl
+              if familier.pv
+                p.card-text.mb-0= "Pv: " + familier.pv
+              if familier.pa
+                p.card-text.mb-0= "Pa: " + familier.pa
+              if familier.pm
+                p.card-text.mb-0= "Pm: " + familier.pm
+              if familier.po
+                p.card-text.mb-0= "Po: " + familier.po
+              if familier.ini
+                p.card-text.mb-0= "Initiative: " + familier.ini
+              if familier.invo
+                p.card-text.mb-0= "Invocation: " + familier.invo
+              if familier.critique
+                p.card-text.mb-0= "Critique: " + familier.critique
+              if familier.prosp
+                p.card-text.mb-0= "Prospection: " + familier.prosp
+              if familier.soin
+                p.card-text.mb-0= "Soin: " + familier.soin
+              if familier.sag
+                p.card-text.mb-0= "Sagesses: " + familier.sag
+              if familier.fo
+                p.card-text.mb-0= "Force: " + familier.fo
+              if familier.int
+                p.card-text.mb-0= "Intelligence: " + familier.int
+              if familier.cha
+                p.card-text.mb-0= "Chance: " + familier.cha
+              if familier.agi
+                p.card-text.mb-0= "Agilité: " + familier.agi
+              if familier.pui
+                p.card-text.mb-0= "Puissance: " + familier.pui
+              if familier.fui
+                p.card-text.mb-0= "Fuite: " + familier.fui
+              if familier.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + familier.esq_pa
+              if familier.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + familier.esq_pm
+              if familier.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + familier.ret_pa
+              if familier.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + familier.ret_pm
+              if familier.pod
+                p.card-text.mb-0= "Pods: " + familier.pod
+              if familier.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + familier.dmg_piege
+              if familier.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + familier.pui_piege
+              if familier.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + familier.renvoie_dmg
+              if familier.bou
+                p.card-text.mb-0= "Bouclier: " + familier.bou
+              if familier.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + familier.dmg_f_neutre
+              if familier.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + familier.dmg_f_terre
+              if familier.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + familier.dmg_f_feu
+              if familier.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + familier.dmg_f_chance
+              if familier.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + familier.dmg_f_air
+              if familier.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + familier.re_f_neutre
+              if familier.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + familier.re_f_terre
+              if familier.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + familier.re_f_feu
+              if familier.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + familier.re_f_chance
+              if familier.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + familier.re_f_air
+              if familier.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + familier.re_x_neutre
+              if familier.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + familier.re_x_terre
+              if familier.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + familier.re_x_feu
+              if familier.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + familier.re_x_chance
+              if familier.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + familier.re_x_mele
+              if familier.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + familier.re_x_distance
+              if familier.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + familier.re_x_arme
+              if familier.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + familier.re_x_sorts
+              if familier.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + familier.dmg_x_mele
+              if familier.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + familier.dmg_x_distance
+              if familier.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + familier.dmg_x_arme
+              if familier.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + familier.dmg_x_sorts
+              if familier.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + familier.dmg_crit
+              if familier.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + familier.dmg_pousse
+              if familier.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + familier.re_crit
+              if familier.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + familier.re_pousse
+            if session 
+              form(action="add/"+familier.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')

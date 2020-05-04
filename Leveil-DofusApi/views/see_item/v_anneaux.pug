@@ -1,0 +1,122 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 ANNEAUX
+    div.row
+      each anneau, index in anneaus
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+anneau.img)
+            div.card-body
+              if anneau.name
+                h5.card-title= anneau.name
+              if anneau.lvl
+                p.card-text.mb-0= "Lvl: " + anneau.lvl
+              if anneau.pv
+                p.card-text.mb-0= "Pv: " + anneau.pv
+              if anneau.pa
+                p.card-text.mb-0= "Pa: " + anneau.pa
+              if anneau.pm
+                p.card-text.mb-0= "Pm: " + anneau.pm
+              if anneau.po
+                p.card-text.mb-0= "Po: " + anneau.po
+              if anneau.ini
+                p.card-text.mb-0= "Initiative: " + anneau.ini
+              if anneau.invo
+                p.card-text.mb-0= "Invocation: " + anneau.invo
+              if anneau.critique
+                p.card-text.mb-0= "Critique: " + anneau.critique
+              if anneau.prosp
+                p.card-text.mb-0= "Prospection: " + anneau.prosp
+              if anneau.soin
+                p.card-text.mb-0= "Soin: " + anneau.soin
+              if anneau.sag
+                p.card-text.mb-0= "Sagesses: " + anneau.sag
+              if anneau.fo
+                p.card-text.mb-0= "Force: " + anneau.fo
+              if anneau.int
+                p.card-text.mb-0= "Intelligence: " + anneau.int
+              if anneau.cha
+                p.card-text.mb-0= "Chance: " + anneau.cha
+              if anneau.agi
+                p.card-text.mb-0= "Agilité: " + anneau.agi
+              if anneau.pui
+                p.card-text.mb-0= "Puissance: " + anneau.pui
+              if anneau.fui
+                p.card-text.mb-0= "Fuite: " + anneau.fui
+              if anneau.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + anneau.esq_pa
+              if anneau.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + anneau.esq_pm
+              if anneau.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + anneau.ret_pa
+              if anneau.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + anneau.ret_pm
+              if anneau.pod
+                p.card-text.mb-0= "Pods: " + anneau.pod
+              if anneau.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + anneau.dmg_piege
+              if anneau.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + anneau.pui_piege
+              if anneau.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + anneau.renvoie_dmg
+              if anneau.bou
+                p.card-text.mb-0= "Bouclier: " + anneau.bou
+              if anneau.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + anneau.dmg_f_neutre
+              if anneau.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + anneau.dmg_f_terre
+              if anneau.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + anneau.dmg_f_feu
+              if anneau.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + anneau.dmg_f_chance
+              if anneau.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + anneau.dmg_f_air
+              if anneau.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + anneau.re_f_neutre
+              if anneau.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + anneau.re_f_terre
+              if anneau.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + anneau.re_f_feu
+              if anneau.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + anneau.re_f_chance
+              if anneau.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + anneau.re_f_air
+              if anneau.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + anneau.re_x_neutre
+              if anneau.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + anneau.re_x_terre
+              if anneau.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + anneau.re_x_feu
+              if anneau.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + anneau.re_x_chance
+              if anneau.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + anneau.re_x_mele
+              if anneau.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + anneau.re_x_distance
+              if anneau.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + anneau.re_x_arme
+              if anneau.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + anneau.re_x_sorts
+              if anneau.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + anneau.dmg_x_mele
+              if anneau.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + anneau.dmg_x_distance
+              if anneau.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + anneau.dmg_x_arme
+              if anneau.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + anneau.dmg_x_sorts
+              if anneau.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + anneau.dmg_crit
+              if anneau.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + anneau.dmg_pousse
+              if anneau.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + anneau.re_crit
+              if anneau.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + anneau.re_pousse
+            if session 
+              form(action="add/"+anneau.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')

@@ -1,0 +1,122 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 BOUCLIERS
+    div.row
+      each bouclier, index in boucliers
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+bouclier.img)
+            div.card-body
+              if bouclier.name
+                h5.card-title= bouclier.name
+              if bouclier.lvl
+                p.card-text.mb-0= "Lvl: " + bouclier.lvl
+              if bouclier.pv
+                p.card-text.mb-0= "Pv: " + bouclier.pv
+              if bouclier.pa
+                p.card-text.mb-0= "Pa: " + bouclier.pa
+              if bouclier.pm
+                p.card-text.mb-0= "Pm: " + bouclier.pm
+              if bouclier.po
+                p.card-text.mb-0= "Po: " + bouclier.po
+              if bouclier.ini
+                p.card-text.mb-0= "Initiative: " + bouclier.ini
+              if bouclier.invo
+                p.card-text.mb-0= "Invocation: " + bouclier.invo
+              if bouclier.critique
+                p.card-text.mb-0= "Critique: " + bouclier.critique
+              if bouclier.prosp
+                p.card-text.mb-0= "Prospection: " + bouclier.prosp
+              if bouclier.soin
+                p.card-text.mb-0= "Soin: " + bouclier.soin
+              if bouclier.sag
+                p.card-text.mb-0= "Sagesses: " + bouclier.sag
+              if bouclier.fo
+                p.card-text.mb-0= "Force: " + bouclier.fo
+              if bouclier.int
+                p.card-text.mb-0= "Intelligence: " + bouclier.int
+              if bouclier.cha
+                p.card-text.mb-0= "Chance: " + bouclier.cha
+              if bouclier.agi
+                p.card-text.mb-0= "Agilité: " + bouclier.agi
+              if bouclier.pui
+                p.card-text.mb-0= "Puissance: " + bouclier.pui
+              if bouclier.fui
+                p.card-text.mb-0= "Fuite: " + bouclier.fui
+              if bouclier.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + bouclier.esq_pa
+              if bouclier.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + bouclier.esq_pm
+              if bouclier.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + bouclier.ret_pa
+              if bouclier.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + bouclier.ret_pm
+              if bouclier.pod
+                p.card-text.mb-0= "Pods: " + bouclier.pod
+              if bouclier.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + bouclier.dmg_piege
+              if bouclier.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + bouclier.pui_piege
+              if bouclier.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + bouclier.renvoie_dmg
+              if bouclier.bou
+                p.card-text.mb-0= "Bouclier: " + bouclier.bou
+              if bouclier.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + bouclier.dmg_f_neutre
+              if bouclier.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + bouclier.dmg_f_terre
+              if bouclier.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + bouclier.dmg_f_feu
+              if bouclier.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + bouclier.dmg_f_chance
+              if bouclier.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + bouclier.dmg_f_air
+              if bouclier.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + bouclier.re_f_neutre
+              if bouclier.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + bouclier.re_f_terre
+              if bouclier.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + bouclier.re_f_feu
+              if bouclier.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + bouclier.re_f_chance
+              if bouclier.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + bouclier.re_f_air
+              if bouclier.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + bouclier.re_x_neutre
+              if bouclier.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + bouclier.re_x_terre
+              if bouclier.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + bouclier.re_x_feu
+              if bouclier.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + bouclier.re_x_chance
+              if bouclier.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + bouclier.re_x_mele
+              if bouclier.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + bouclier.re_x_distance
+              if bouclier.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + bouclier.re_x_arme
+              if bouclier.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + bouclier.re_x_sorts
+              if bouclier.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + bouclier.dmg_x_mele
+              if bouclier.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + bouclier.dmg_x_distance
+              if bouclier.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + bouclier.dmg_x_arme
+              if bouclier.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + bouclier.dmg_x_sorts
+              if bouclier.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + bouclier.dmg_crit
+              if bouclier.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + bouclier.dmg_pousse
+              if bouclier.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + bouclier.re_crit
+              if bouclier.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + bouclier.re_pousse
+            if session 
+              form(action="add/"+bouclier.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')

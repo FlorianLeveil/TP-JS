@@ -1,0 +1,122 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 COIFFES
+    div.row
+      each coif, index in coifs
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+coif.img)
+            div.card-body
+              if coif.name
+                h5.card-title= coif.name
+              if coif.lvl
+                p.card-text.mb-0= "Lvl: " + coif.lvl
+              if coif.pv
+                p.card-text.mb-0= "Pv: " + coif.pv
+              if coif.pa
+                p.card-text.mb-0= "Pa: " + coif.pa
+              if coif.pm
+                p.card-text.mb-0= "Pm: " + coif.pm
+              if coif.po
+                p.card-text.mb-0= "Po: " + coif.po
+              if coif.ini
+                p.card-text.mb-0= "Initiative: " + coif.ini
+              if coif.invo
+                p.card-text.mb-0= "Invocation: " + coif.invo
+              if coif.critique
+                p.card-text.mb-0= "Critique: " + coif.critique
+              if coif.prosp
+                p.card-text.mb-0= "Prospection: " + coif.prosp
+              if coif.soin
+                p.card-text.mb-0= "Soin: " + coif.soin
+              if coif.sag
+                p.card-text.mb-0= "Sagesses: " + coif.sag
+              if coif.fo
+                p.card-text.mb-0= "Force: " + coif.fo
+              if coif.int
+                p.card-text.mb-0= "Intelligence: " + coif.int
+              if coif.cha
+                p.card-text.mb-0= "Chance: " + coif.cha
+              if coif.agi
+                p.card-text.mb-0= "Agilité: " + coif.agi
+              if coif.pui
+                p.card-text.mb-0= "Puissance: " + coif.pui
+              if coif.fui
+                p.card-text.mb-0= "Fuite: " + coif.fui
+              if coif.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + coif.esq_pa
+              if coif.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + coif.esq_pm
+              if coif.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + coif.ret_pa
+              if coif.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + coif.ret_pm
+              if coif.pod
+                p.card-text.mb-0= "Pods: " + coif.pod
+              if coif.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + coif.dmg_piege
+              if coif.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + coif.pui_piege
+              if coif.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + coif.renvoie_dmg
+              if coif.bou
+                p.card-text.mb-0= "Bouclier: " + coif.bou
+              if coif.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + coif.dmg_f_neutre
+              if coif.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + coif.dmg_f_terre
+              if coif.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + coif.dmg_f_feu
+              if coif.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + coif.dmg_f_chance
+              if coif.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + coif.dmg_f_air
+              if coif.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + coif.re_f_neutre
+              if coif.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + coif.re_f_terre
+              if coif.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + coif.re_f_feu
+              if coif.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + coif.re_f_chance
+              if coif.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + coif.re_f_air
+              if coif.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + coif.re_x_neutre
+              if coif.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + coif.re_x_terre
+              if coif.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + coif.re_x_feu
+              if coif.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + coif.re_x_chance
+              if coif.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + coif.re_x_mele
+              if coif.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + coif.re_x_distance
+              if coif.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + coif.re_x_arme
+              if coif.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + coif.re_x_sorts
+              if coif.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + coif.dmg_x_mele
+              if coif.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + coif.dmg_x_distance
+              if coif.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + coif.dmg_x_arme
+              if coif.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + coif.dmg_x_sorts
+              if coif.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + coif.dmg_crit
+              if coif.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + coif.dmg_pousse
+              if coif.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + coif.re_crit
+              if coif.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + coif.re_pousse
+            if session 
+              form(action="add/"+coif.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')

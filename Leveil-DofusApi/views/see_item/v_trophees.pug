@@ -1,0 +1,123 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 TROPHÉES
+    div.row
+      each trophee, index in trophees
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+trophee.img)
+            div.card-body
+              if trophee.name
+                h5.card-title= trophee.name
+              if trophee.lvl
+                p.card-text.mb-0= "Lvl: " + trophee.lvl
+              if trophee.pv
+                p.card-text.mb-0= "Pv: " + trophee.pv
+              if trophee.pa
+                p.card-text.mb-0= "Pa: " + trophee.pa
+              if trophee.pm
+                p.card-text.mb-0= "Pm: " + trophee.pm
+              if trophee.po
+                p.card-text.mb-0= "Po: " + trophee.po
+              if trophee.ini
+                p.card-text.mb-0= "Initiative: " + trophee.ini
+              if trophee.invo
+                p.card-text.mb-0= "Invocation: " + trophee.invo
+              if trophee.critique
+                p.card-text.mb-0= "Critique: " + trophee.critique
+              if trophee.prosp
+                p.card-text.mb-0= "Prospection: " + trophee.prosp
+              if trophee.soin
+                p.card-text.mb-0= "Soin: " + trophee.soin
+              if trophee.sag
+                p.card-text.mb-0= "Sagesses: " + trophee.sag
+              if trophee.fo
+                p.card-text.mb-0= "Force: " + trophee.fo
+              if trophee.int
+                p.card-text.mb-0= "Intelligence: " + trophee.int
+              if trophee.cha
+                p.card-text.mb-0= "Chance: " + trophee.cha
+              if trophee.agi
+                p.card-text.mb-0= "Agilité: " + trophee.agi
+              if trophee.pui
+                p.card-text.mb-0= "Puissance: " + trophee.pui
+              if trophee.fui
+                p.card-text.mb-0= "Fuite: " + trophee.fui
+              if trophee.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + trophee.esq_pa
+              if trophee.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + trophee.esq_pm
+              if trophee.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + trophee.ret_pa
+              if trophee.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + trophee.ret_pm
+              if trophee.pod
+                p.card-text.mb-0= "Pods: " + trophee.pod
+              if trophee.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + trophee.dmg_piege
+              if trophee.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + trophee.pui_piege
+              if trophee.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + trophee.renvoie_dmg
+              if trophee.bou
+                p.card-text.mb-0= "Bouclier: " + trophee.bou
+              if trophee.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + trophee.dmg_f_neutre
+              if trophee.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + trophee.dmg_f_terre
+              if trophee.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + trophee.dmg_f_feu
+              if trophee.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + trophee.dmg_f_chance
+              if trophee.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + trophee.dmg_f_air
+              if trophee.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + trophee.re_f_neutre
+              if trophee.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + trophee.re_f_terre
+              if trophee.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + trophee.re_f_feu
+              if trophee.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + trophee.re_f_chance
+              if trophee.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + trophee.re_f_air
+              if trophee.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + trophee.re_x_neutre
+              if trophee.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + trophee.re_x_terre
+              if trophee.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + trophee.re_x_feu
+              if trophee.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + trophee.re_x_chance
+              if trophee.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + trophee.re_x_mele
+              if trophee.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + trophee.re_x_distance
+              if trophee.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + trophee.re_x_arme
+              if trophee.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + trophee.re_x_sorts
+              if trophee.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + trophee.dmg_x_mele
+              if trophee.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + trophee.dmg_x_distance
+              if trophee.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + trophee.dmg_x_arme
+              if trophee.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + trophee.dmg_x_sorts
+              if trophee.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + trophee.dmg_crit
+              if trophee.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + trophee.dmg_pousse
+              if trophee.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + trophee.re_crit
+              if trophee.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + trophee.re_pousse
+            if session 
+              form(action="add/"+trophee.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')
+

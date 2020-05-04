@@ -1,0 +1,122 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 CEINTURES
+    div.row
+      each ceinture, index in ceintures
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+ceinture.img)
+            div.card-body
+              if ceinture.name
+                h5.card-title= ceinture.name
+              if ceinture.lvl
+                p.card-text.mb-0= "Lvl: " + ceinture.lvl
+              if ceinture.pv
+                p.card-text.mb-0= "Pv: " + ceinture.pv
+              if ceinture.pa
+                p.card-text.mb-0= "Pa: " + ceinture.pa
+              if ceinture.pm
+                p.card-text.mb-0= "Pm: " + ceinture.pm
+              if ceinture.po
+                p.card-text.mb-0= "Po: " + ceinture.po
+              if ceinture.ini
+                p.card-text.mb-0= "Initiative: " + ceinture.ini
+              if ceinture.invo
+                p.card-text.mb-0= "Invocation: " + ceinture.invo
+              if ceinture.critique
+                p.card-text.mb-0= "Critique: " + ceinture.critique
+              if ceinture.prosp
+                p.card-text.mb-0= "Prospection: " + ceinture.prosp
+              if ceinture.soin
+                p.card-text.mb-0= "Soin: " + ceinture.soin
+              if ceinture.sag
+                p.card-text.mb-0= "Sagesses: " + ceinture.sag
+              if ceinture.fo
+                p.card-text.mb-0= "Force: " + ceinture.fo
+              if ceinture.int
+                p.card-text.mb-0= "Intelligence: " + ceinture.int
+              if ceinture.cha
+                p.card-text.mb-0= "Chance: " + ceinture.cha
+              if ceinture.agi
+                p.card-text.mb-0= "Agilité: " + ceinture.agi
+              if ceinture.pui
+                p.card-text.mb-0= "Puissance: " + ceinture.pui
+              if ceinture.fui
+                p.card-text.mb-0= "Fuite: " + ceinture.fui
+              if ceinture.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + ceinture.esq_pa
+              if ceinture.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + ceinture.esq_pm
+              if ceinture.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + ceinture.ret_pa
+              if ceinture.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + ceinture.ret_pm
+              if ceinture.pod
+                p.card-text.mb-0= "Pods: " + ceinture.pod
+              if ceinture.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + ceinture.dmg_piege
+              if ceinture.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + ceinture.pui_piege
+              if ceinture.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + ceinture.renvoie_dmg
+              if ceinture.bou
+                p.card-text.mb-0= "Bouclier: " + ceinture.bou
+              if ceinture.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + ceinture.dmg_f_neutre
+              if ceinture.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + ceinture.dmg_f_terre
+              if ceinture.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + ceinture.dmg_f_feu
+              if ceinture.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + ceinture.dmg_f_chance
+              if ceinture.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + ceinture.dmg_f_air
+              if ceinture.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + ceinture.re_f_neutre
+              if ceinture.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + ceinture.re_f_terre
+              if ceinture.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + ceinture.re_f_feu
+              if ceinture.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + ceinture.re_f_chance
+              if ceinture.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + ceinture.re_f_air
+              if ceinture.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + ceinture.re_x_neutre
+              if ceinture.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + ceinture.re_x_terre
+              if ceinture.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + ceinture.re_x_feu
+              if ceinture.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + ceinture.re_x_chance
+              if ceinture.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + ceinture.re_x_mele
+              if ceinture.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + ceinture.re_x_distance
+              if ceinture.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + ceinture.re_x_arme
+              if ceinture.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + ceinture.re_x_sorts
+              if ceinture.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + ceinture.dmg_x_mele
+              if ceinture.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + ceinture.dmg_x_distance
+              if ceinture.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + ceinture.dmg_x_arme
+              if ceinture.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + ceinture.dmg_x_sorts
+              if ceinture.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + ceinture.dmg_crit
+              if ceinture.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + ceinture.dmg_pousse
+              if ceinture.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + ceinture.re_crit
+              if ceinture.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + ceinture.re_pousse
+            if session 
+              form(action="add/"+ceinture.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')

@@ -1,0 +1,122 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 MONTURES
+    div.row
+      each monture, index in montures
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+monture.img)
+            div.card-body
+              if monture.name
+                h5.card-title= monture.name
+              if monture.lvl
+                p.card-text.mb-0= "Lvl: " + monture.lvl
+              if monture.pv
+                p.card-text.mb-0= "Pv: " + monture.pv
+              if monture.pa
+                p.card-text.mb-0= "Pa: " + monture.pa
+              if monture.pm
+                p.card-text.mb-0= "Pm: " + monture.pm
+              if monture.po
+                p.card-text.mb-0= "Po: " + monture.po
+              if monture.ini
+                p.card-text.mb-0= "Initiative: " + monture.ini
+              if monture.invo
+                p.card-text.mb-0= "Invocation: " + monture.invo
+              if monture.critique
+                p.card-text.mb-0= "Critique: " + monture.critique
+              if monture.prosp
+                p.card-text.mb-0= "Prospection: " + monture.prosp
+              if monture.soin
+                p.card-text.mb-0= "Soin: " + monture.soin
+              if monture.sag
+                p.card-text.mb-0= "Sagesses: " + monture.sag
+              if monture.fo
+                p.card-text.mb-0= "Force: " + monture.fo
+              if monture.int
+                p.card-text.mb-0= "Intelligence: " + monture.int
+              if monture.cha
+                p.card-text.mb-0= "Chance: " + monture.cha
+              if monture.agi
+                p.card-text.mb-0= "Agilité: " + monture.agi
+              if monture.pui
+                p.card-text.mb-0= "Puissance: " + monture.pui
+              if monture.fui
+                p.card-text.mb-0= "Fuite: " + monture.fui
+              if monture.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + monture.esq_pa
+              if monture.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + monture.esq_pm
+              if monture.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + monture.ret_pa
+              if monture.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + monture.ret_pm
+              if monture.pod
+                p.card-text.mb-0= "Pods: " + monture.pod
+              if monture.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + monture.dmg_piege
+              if monture.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + monture.pui_piege
+              if monture.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + monture.renvoie_dmg
+              if monture.bou
+                p.card-text.mb-0= "Bouclier: " + monture.bou
+              if monture.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + monture.dmg_f_neutre
+              if monture.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + monture.dmg_f_terre
+              if monture.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + monture.dmg_f_feu
+              if monture.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + monture.dmg_f_chance
+              if monture.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + monture.dmg_f_air
+              if monture.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + monture.re_f_neutre
+              if monture.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + monture.re_f_terre
+              if monture.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + monture.re_f_feu
+              if monture.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + monture.re_f_chance
+              if monture.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + monture.re_f_air
+              if monture.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + monture.re_x_neutre
+              if monture.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + monture.re_x_terre
+              if monture.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + monture.re_x_feu
+              if monture.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + monture.re_x_chance
+              if monture.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + monture.re_x_mele
+              if monture.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + monture.re_x_distance
+              if monture.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + monture.re_x_arme
+              if monture.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + monture.re_x_sorts
+              if monture.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + monture.dmg_x_mele
+              if monture.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + monture.dmg_x_distance
+              if monture.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + monture.dmg_x_arme
+              if monture.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + monture.dmg_x_sorts
+              if monture.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + monture.dmg_crit
+              if monture.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + monture.dmg_pousse
+              if monture.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + monture.re_crit
+              if monture.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + monture.re_pousse
+            if session 
+                form(action="add/"+monture.id+'?_method=PATCH', method='POST')
+                  .row.justify-content-center
+                    .col-6
+                      input.d-none(type='text', name='id' value=perso.id)
+                      input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')

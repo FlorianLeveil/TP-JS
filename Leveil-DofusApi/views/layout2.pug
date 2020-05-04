@@ -1,0 +1,25 @@
+- var tot_agi = items[1].agi + items[2].agi + items[3].agi + items[4].agi + items[5].agi + items[6].agi + items[7].agi + items[8].agi + items[9].agi + items[10].agi + items[11].agi + items[12].agi;
+- var tot_int = items[1].int + items[2].int + items[3].int + items[4].int + items[5].int + items[6].int + items[7].int + items[8].int + items[9].int + items[10].int + items[11].int + items[12].int;
+- var tot_cha = items[1].cha + items[2].cha + items[3].cha + items[4].cha + items[5].cha + items[6].cha + items[7].cha + items[8].cha + items[9].cha + items[10].cha + items[11].cha + items[12].cha
+- var tot_fo = items[1].fo + items[2].fo + items[3].fo + items[4].fo + items[5].fo + items[6].fo + items[7].fo + items[8].fo + items[9].fo + items[10].fo + items[11].fo + items[12].fo;
+- var tot_sag = items[1].sag + items[2].sag + items[3].sag + items[4].sag + items[5].sag + items[6].sag + items[7].sag + items[8].sag + items[9].sag + items[10].sag + items[11].sag + items[12].sag;
+
+- var add_soins =tot_int / 10;
+- var add_tac = tot_agi / 10;
+- var add_fui = tot_agi / 10;
+- var add_ret_pa = tot_sag / 10;
+- var add_esq_pa = tot_sag / 10;
+- var add_ret_pm = tot_sag / 10;
+- var add_esq_pm = tot_sag / 10;
+- var add_prosp = tot_cha / 10;
+- var add_ini = tot_cha + tot_fo + tot_agi + tot_int;
+- var add_pod = 5 * tot_fo;
+
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    include navbar.pug
+    block content

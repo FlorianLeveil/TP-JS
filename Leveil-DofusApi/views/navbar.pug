@@ -1,0 +1,16 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-black.fixed-top
+  .container-fluid
+    .navbar-brand
+      a(href="/").navbar-brand Dofus Stuff
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        if !session 
+          span.navbar-text.mr-3
+            a(href="/register") Register
+        else 
+          li.nav-item.mr-3
+            a.nav-link(href="/perso") Mes perso
+          li.nav-item.mr-3
+              a.nav-link(href="/account") Account
+      span.navbar-text
+        a.nav-item(href=session ? '/logout' : '/login')= session ? 'Logout' : 'Login'

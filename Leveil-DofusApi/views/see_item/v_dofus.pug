@@ -1,0 +1,122 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 DOFUS
+    div.row
+      each dofus, index in dofuss
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+dofus.img)
+            div.card-body
+              if dofus.name
+                h5.card-title= dofus.name
+              if dofus.lvl
+                p.card-text.mb-0= "Lvl: " + dofus.lvl
+              if dofus.pv
+                p.card-text.mb-0= "Pv: " + dofus.pv
+              if dofus.pa
+                p.card-text.mb-0= "Pa: " + dofus.pa
+              if dofus.pm
+                p.card-text.mb-0= "Pm: " + dofus.pm
+              if dofus.po
+                p.card-text.mb-0= "Po: " + dofus.po
+              if dofus.ini
+                p.card-text.mb-0= "Initiative: " + dofus.ini
+              if dofus.invo
+                p.card-text.mb-0= "Invocation: " + dofus.invo
+              if dofus.critique
+                p.card-text.mb-0= "Critique: " + dofus.critique
+              if dofus.prosp
+                p.card-text.mb-0= "Prospection: " + dofus.prosp
+              if dofus.soin
+                p.card-text.mb-0= "Soin: " + dofus.soin
+              if dofus.sag
+                p.card-text.mb-0= "Sagesses: " + dofus.sag
+              if dofus.fo
+                p.card-text.mb-0= "Force: " + dofus.fo
+              if dofus.int
+                p.card-text.mb-0= "Intelligence: " + dofus.int
+              if dofus.cha
+                p.card-text.mb-0= "Chance: " + dofus.cha
+              if dofus.agi
+                p.card-text.mb-0= "Agilité: " + dofus.agi
+              if dofus.pui
+                p.card-text.mb-0= "Puissance: " + dofus.pui
+              if dofus.fui
+                p.card-text.mb-0= "Fuite: " + dofus.fui
+              if dofus.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + dofus.esq_pa
+              if dofus.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + dofus.esq_pm
+              if dofus.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + dofus.ret_pa
+              if dofus.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + dofus.ret_pm
+              if dofus.pod
+                p.card-text.mb-0= "Pods: " + dofus.pod
+              if dofus.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + dofus.dmg_piege
+              if dofus.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + dofus.pui_piege
+              if dofus.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + dofus.renvoie_dmg
+              if dofus.bou
+                p.card-text.mb-0= "Bouclier: " + dofus.bou
+              if dofus.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + dofus.dmg_f_neutre
+              if dofus.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + dofus.dmg_f_terre
+              if dofus.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + dofus.dmg_f_feu
+              if dofus.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + dofus.dmg_f_chance
+              if dofus.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + dofus.dmg_f_air
+              if dofus.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + dofus.re_f_neutre
+              if dofus.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + dofus.re_f_terre
+              if dofus.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + dofus.re_f_feu
+              if dofus.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + dofus.re_f_chance
+              if dofus.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + dofus.re_f_air
+              if dofus.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + dofus.re_x_neutre
+              if dofus.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + dofus.re_x_terre
+              if dofus.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + dofus.re_x_feu
+              if dofus.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + dofus.re_x_chance
+              if dofus.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + dofus.re_x_mele
+              if dofus.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + dofus.re_x_distance
+              if dofus.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + dofus.re_x_arme
+              if dofus.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + dofus.re_x_sorts
+              if dofus.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + dofus.dmg_x_mele
+              if dofus.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + dofus.dmg_x_distance
+              if dofus.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + dofus.dmg_x_arme
+              if dofus.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + dofus.dmg_x_sorts
+              if dofus.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + dofus.dmg_crit
+              if dofus.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + dofus.dmg_pousse
+              if dofus.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + dofus.re_crit
+              if dofus.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + dofus.re_pousse
+            if session 
+              form(action="add/"+dofus.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')

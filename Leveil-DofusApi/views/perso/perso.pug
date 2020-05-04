@@ -1,0 +1,72 @@
+extends ../layout
+block content
+    div.container.pt-2
+        h1.pt-5.pb-3 Persos
+            form(action='/perso', method='POST')
+                div.row.align-items-end.pt-5
+
+                    div.col-3
+                        label(for='name') Nom
+                        input.form-control(type='text', name='name')
+                    div.col-3
+                        label(for='lvl') Lvl
+                        input.form-control(type='text', name='lvl')
+                    div.col-3
+                        input.btn.btn-lg.btn-dark(type='submit', value='Créer un nouveau perso')
+        if my_items
+            div.row
+                each items, index in my_items
+                    div.col-lg-3.pt-3
+                        div.card.h-100.bg-dark.text-light
+                            div.card-body
+                                p= items[0].nom
+                                p= items[0].lvl
+
+                                hr.bg-white
+                                if items[0].coifId
+                                    p= "Chapeau: "+ items[1].name
+
+                                if items[0].amuletteId
+                                    p= "Amulette: " + items[2].name
+
+                                if items[0].anneauId
+                                    p= "Anneaux: " + items[3].name
+
+                                if items[0].botteId
+                                    p= "Botte: " + items[4].name
+
+                                if items[0].bouclierId
+                                    p= "Bouclier: " + items[5].name
+
+                                if items[0].cacfId
+                                    p= "Cac: " + items[6].name
+
+                                if items[0].capeId
+                                    p= "Cape: " + items[7].name
+
+                                if items[0].ceintureId
+                                    p= "Ceinture: " + items[8].name
+
+                                if items[0].dofufId
+                                    p= "Dofus: " + items[9].name
+                                
+                                if items[0].montureId
+                                    p= "Monture: " + items[10].name
+                                
+                                if items[0].familierId
+                                    p= "Familier: " + items[11].name
+                                
+                                if items[0].tropheeId
+                                    p= "Trophée: " + items[12].name
+
+                                hr.bg-white
+                                div.row
+                                    div.col-6
+                                        a.btn.btn-primary(href='/perso/modify/'+items[0].id) Modifier
+
+                                    div.col-6
+                                        form(action='/perso/' + items[0].id + '?_method=DELETE', method='POST')
+                                            button.btn.btn-primary.btn-lg Delete
+
+        if !my_items
+            p Vous n'avez pas de persos :(

@@ -1,0 +1,122 @@
+extends ../layout
+
+block content
+    h1.pt-5.pb-3 BOTTES
+    div.row
+      each botte, index in bottes
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+botte.img)
+            div.card-body
+              if botte.name
+                h5.card-title= botte.name
+              if botte.lvl
+                p.card-text.mb-0= "Lvl: " + botte.lvl
+              if botte.pv
+                p.card-text.mb-0= "Pv: " + botte.pv
+              if botte.pa
+                p.card-text.mb-0= "Pa: " + botte.pa
+              if botte.pm
+                p.card-text.mb-0= "Pm: " + botte.pm
+              if botte.po
+                p.card-text.mb-0= "Po: " + botte.po
+              if botte.ini
+                p.card-text.mb-0= "Initiative: " + botte.ini
+              if botte.invo
+                p.card-text.mb-0= "Invocation: " + botte.invo
+              if botte.critique
+                p.card-text.mb-0= "Critique: " + botte.critique
+              if botte.prosp
+                p.card-text.mb-0= "Prospection: " + botte.prosp
+              if botte.soin
+                p.card-text.mb-0= "Soin: " + botte.soin
+              if botte.sag
+                p.card-text.mb-0= "Sagesses: " + botte.sag
+              if botte.fo
+                p.card-text.mb-0= "Force: " + botte.fo
+              if botte.int
+                p.card-text.mb-0= "Intelligence: " + botte.int
+              if botte.cha
+                p.card-text.mb-0= "Chance: " + botte.cha
+              if botte.agi
+                p.card-text.mb-0= "Agilité: " + botte.agi
+              if botte.pui
+                p.card-text.mb-0= "Puissance: " + botte.pui
+              if botte.fui
+                p.card-text.mb-0= "Fuite: " + botte.fui
+              if botte.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + botte.esq_pa
+              if botte.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + botte.esq_pm
+              if botte.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + botte.ret_pa
+              if botte.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + botte.ret_pm
+              if botte.pod
+                p.card-text.mb-0= "Pods: " + botte.pod
+              if botte.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + botte.dmg_piege
+              if botte.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + botte.pui_piege
+              if botte.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + botte.renvoie_dmg
+              if botte.bou
+                p.card-text.mb-0= "Bouclier: " + botte.bou
+              if botte.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + botte.dmg_f_neutre
+              if botte.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + botte.dmg_f_terre
+              if botte.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + botte.dmg_f_feu
+              if botte.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + botte.dmg_f_chance
+              if botte.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + botte.dmg_f_air
+              if botte.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + botte.re_f_neutre
+              if botte.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + botte.re_f_terre
+              if botte.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + botte.re_f_feu
+              if botte.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + botte.re_f_chance
+              if botte.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + botte.re_f_air
+              if botte.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + botte.re_x_neutre
+              if botte.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + botte.re_x_terre
+              if botte.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + botte.re_x_feu
+              if botte.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + botte.re_x_chance
+              if botte.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + botte.re_x_mele
+              if botte.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + botte.re_x_distance
+              if botte.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + botte.re_x_arme
+              if botte.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + botte.re_x_sorts
+              if botte.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + botte.dmg_x_mele
+              if botte.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + botte.dmg_x_distance
+              if botte.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + botte.dmg_x_arme
+              if botte.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + botte.dmg_x_sorts
+              if botte.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + botte.dmg_crit
+              if botte.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + botte.dmg_pousse
+              if botte.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + botte.re_crit
+              if botte.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + botte.re_pousse
+            if session 
+              form(action="add/"+botte.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')

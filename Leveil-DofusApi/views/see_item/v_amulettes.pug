@@ -1,0 +1,121 @@
+extends ../layout
+block content
+    h1.pt-5.pb-3 AMULETTES
+    div.row
+      each amulette, index in amulettes
+        div.col-lg-2
+          div.card.h-100.bg-dark.text-light
+            img.card-img-top(src="/images/"+amulette.img)
+            div.card-body
+              if amulette.name
+                h5.card-title= amulette.name
+              if amulette.lvl
+                p.card-text.mb-0= "Lvl: " + amulette.lvl
+              if amulette.pv
+                p.card-text.mb-0= "Pv: " + amulette.pv
+              if amulette.pa
+                p.card-text.mb-0= "Pa: " + amulette.pa
+              if amulette.pm
+                p.card-text.mb-0= "Pm: " + amulette.pm
+              if amulette.po
+                p.card-text.mb-0= "Po: " + amulette.po
+              if amulette.ini
+                p.card-text.mb-0= "Initiative: " + amulette.ini
+              if amulette.invo
+                p.card-text.mb-0= "Invocation: " + amulette.invo
+              if amulette.critique
+                p.card-text.mb-0= "Critique: " + amulette.critique
+              if amulette.prosp
+                p.card-text.mb-0= "Prospection: " + amulette.prosp
+              if amulette.soin
+                p.card-text.mb-0= "Soin: " + amulette.soin
+              if amulette.sag
+                p.card-text.mb-0= "Sagesses: " + amulette.sag
+              if amulette.fo
+                p.card-text.mb-0= "Force: " + amulette.fo
+              if amulette.int
+                p.card-text.mb-0= "Intelligence: " + amulette.int
+              if amulette.cha
+                p.card-text.mb-0= "Chance: " + amulette.cha
+              if amulette.agi
+                p.card-text.mb-0= "Agilité: " + amulette.agi
+              if amulette.pui
+                p.card-text.mb-0= "Puissance: " + amulette.pui
+              if amulette.fui
+                p.card-text.mb-0= "Fuite: " + amulette.fui
+              if amulette.esq_pa
+                p.card-text.mb-0= "Esquive PA: " + amulette.esq_pa
+              if amulette.esq_pm
+                p.card-text.mb-0= "Esquive PM: " + amulette.esq_pm
+              if amulette.ret_pa
+                p.card-text.mb-0= "Retrait PA: " + amulette.ret_pa
+              if amulette.ret_pm
+                p.card-text.mb-0= "Retrait PM: " + amulette.ret_pm
+              if amulette.pod
+                p.card-text.mb-0= "Pods: " + amulette.pod
+              if amulette.dmg_piege
+                p.card-text.mb-0= "Dommage Piège: " + amulette.dmg_piege
+              if amulette.pui_piege
+                p.card-text.mb-0= "Puissance Piège: " + amulette.pui_piege
+              if amulette.renvoie_dmg
+                p.card-text.mb-0= "Renvoie de Dommage: " + amulette.renvoie_dmg
+              if amulette.bou
+                p.card-text.mb-0= "Bouclier: " + amulette.bou
+              if amulette.dmg_f_neutre
+                p.card-text.mb-0= "Dommage Fix Neutre: " + amulette.dmg_f_neutre
+              if amulette.dmg_f_terre
+                p.card-text.mb-0= "Dommage Fix Terre: " + amulette.dmg_f_terre
+              if amulette.dmg_f_feu
+                p.card-text.mb-0= "Dommage Fix Feu: " + amulette.dmg_f_feu
+              if amulette.dmg_f_chance
+                p.card-text.mb-0= "Dommage Fix Chance: " + amulette.dmg_f_chance
+              if amulette.dmg_f_air
+                p.card-text.mb-0= "Dommage Fix Air: " + amulette.dmg_f_air
+              if amulette.re_f_neutre
+                p.card-text.mb-0= "Résistance Fix Neutre: " + amulette.re_f_neutre
+              if amulette.re_f_terre
+                p.card-text.mb-0= "Résistance Fix Terre: " + amulette.re_f_terre
+              if amulette.re_f_feu
+                p.card-text.mb-0= "Résistance Fix Feu: " + amulette.re_f_feu
+              if amulette.re_f_chance
+                p.card-text.mb-0= "Résistance Fix Chance: " + amulette.re_f_chance
+              if amulette.re_f_air
+                p.card-text.mb-0= "Résistance Fix Air: " + amulette.re_f_air
+              if amulette.re_x_neutre
+                p.card-text.mb-0= "Résistance % Neutre: " + amulette.re_x_neutre
+              if amulette.re_x_terre
+                p.card-text.mb-0= "Résistance % Terre: " + amulette.re_x_terre
+              if amulette.re_x_feu
+                p.card-text.mb-0= "Résistance % Feu: " + amulette.re_x_feu
+              if amulette.re_x_chance
+                p.card-text.mb-0= "Résistance % Chance: " + amulette.re_x_chance
+              if amulette.re_x_mele
+                p.card-text.mb-0= "Résistance % Mélé: " + amulette.re_x_mele
+              if amulette.re_x_distance
+                p.card-text.mb-0= "Résistance % Distance: " + amulette.re_x_distance
+              if amulette.re_x_arme
+                p.card-text.mb-0= "Résistance % Arme: " + amulette.re_x_arme
+              if amulette.re_x_sorts
+                p.card-text.mb-0= "Résistance % Sort: " + amulette.re_x_sorts
+              if amulette.dmg_x_mele
+                p.card-text.mb-0= "Dommage % Mélé: " + amulette.dmg_x_mele
+              if amulette.dmg_x_distance
+                p.card-text.mb-0= "Dommage % Distance: " + amulette.dmg_x_distance
+              if amulette.dmg_x_arme
+                p.card-text.mb-0= "Dommage % Arme: " + amulette.dmg_x_arme
+              if amulette.dmg_x_sorts
+                p.card-text.mb-0= "Dommage % Sort: " + amulette.dmg_x_sorts
+              if amulette.dmg_crit
+                p.card-text.mb-0= "Dommage Critique: " + amulette.dmg_crit
+              if amulette.dmg_pousse
+                p.card-text.mb-0= "Dommage Poussé: " + amulette.dmg_pousse
+              if amulette.re_crit
+                p.card-text.mb-0= "Résistance Critique: " + amulette.re_crit
+              if amulette.re_pousse
+                p.card-text.mb-0= "Résistance Poussé: " + amulette.re_pousse
+            if session 
+              form(action="add/"+amulette.id+'?_method=PATCH', method='POST')
+                .row.justify-content-center
+                  .col-6
+                    input.d-none(type='text', name='id' value=perso.id)
+                    input.btn.btn-lg.btn-primary(type='submit', value='Ajouter')
