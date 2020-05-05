@@ -11,6 +11,10 @@
 
 Mon projet consistait à reproduire certaines fonctionalités du site Dofus book. Je devais pouvoir créer différent personnages et pouvoir les équiper en fonction de mes besoins. Le site aurait alors calculé à ma place mes différents caractéristiques.
 
+[Ma présentation.](./images/presentation_dofus_api.pdf)
+[Ma base de donnée.](./images/database_developement.pdf)
+
+
 ## Fonctionalitées
 
 * Voir les items implémentés en BDD
