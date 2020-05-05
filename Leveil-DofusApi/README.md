@@ -13,7 +13,7 @@ Mon projet consistait à reproduire certaines fonctionalités du site Dofus book
 
 [Ma présentation.](../images/presentation_dofus_api.pdf)
 
-[Ma base de donnée.](.//images/database_developement.pdf)
+[Ma base de donnée.](.//images/database.pdf)
 
 
 ## Fonctionalitées
